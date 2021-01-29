@@ -7,6 +7,7 @@ import { StandardPicture } from "./components/StandardPicture/StandardPicture";
 import { Process } from "./components/Process/Process";
 import { Pricing } from "./components/Pricing/Pricing";
 import "./App.scss";
+import { Testimonials } from "./components/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <StandardPicture></StandardPicture>
         <Process></Process>
         <Pricing></Pricing>
+        <Testimonials></Testimonials>
       </main>
     </div>
   );
