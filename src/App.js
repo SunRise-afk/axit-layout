@@ -5,6 +5,7 @@ import { Tabs } from "./components/Tabs/Tabs";
 import { Sublist } from "./components/Sublist/Sublist";
 import { StandardPicture } from "./components/StandardPicture/StandardPicture";
 import "./App.scss";
+import { Process } from "./components/Process/Process";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Tabs></Tabs>
         <Sublist></Sublist>
         <StandardPicture></StandardPicture>
+        <Process></Process>
       </main>
     </div>
   );
