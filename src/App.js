@@ -12,7 +12,9 @@ function App() {
         <Jumbo></Jumbo>
         <Socials></Socials>
       </header>
-      <Tabs></Tabs>
+      <main>
+        <Tabs></Tabs>
+      </main>
     </div>
   );
 }

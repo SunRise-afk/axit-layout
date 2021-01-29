@@ -1,0 +1,93 @@
+@import "../../variables";
+
+section.tabs {
+  background-color: $color_grey_bg_sections;
+  padding: 100px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .tab_buttons {
+      width: 15%;
+      display: flex;
+      flex-direction: column;
+      .tab_button {
+        width: 60%;
+        background-color: $color_dark;
+        padding: 40px 0;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1px;
+        cursor: pointer;
+        transition: 0.1s linear;
+        &:first-child {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+        &:last-child {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        &:hover {
+          background-color: $color_orange;
+        }
+      }
+    }
+    .tab_content_container {
+      width: 45%;
+      position: relative;
+      top: -150px;
+    }
+    .tab_content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .tab_content_heading {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 50px;
+      }
+      .tab_content_paragraph {
+        font-size: 14px;
+        color: $color_grey_text;
+        margin-bottom: 50px;
+      }
+      .tab_content_button {
+        background-color: $color_orange;
+        width: fit-content;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .tab_content.displayed {
+      opacity: 1;
+      transition: 1s linear;
+    }
+    .tab_image_container {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      img {
+        position: absolute;
+        opacity: 0;
+        &.displayed {
+          opacity: 1;
+          transition: 1s linear;
+        }
+      }
+    }
+  }
+}
