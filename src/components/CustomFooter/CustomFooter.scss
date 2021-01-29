@@ -1,0 +1,22 @@
+@import "../../variables";
+
+section.footer {
+  background-color: black;
+  padding: 40px;
+  .container {
+    display: flex;
+    justify-content: center;
+    .socials_links {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      i {
+        color: $color_grey_links;
+        font-size: 50px;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -6,8 +6,11 @@ import { Sublist } from "./components/Sublist/Sublist";
 import { StandardPicture } from "./components/StandardPicture/StandardPicture";
 import { Process } from "./components/Process/Process";
 import { Pricing } from "./components/Pricing/Pricing";
-import "./App.scss";
 import { Testimonials } from "./components/Testimonials/Testimonials";
+import { CustomDesign } from "./components/CustomDesign/CustomDesign";
+import { Contact } from "./components/Contact/Contact";
+import { CustomFooter } from "./components/CustomFooter/CustomFooter";
+import "./App.scss";
 
 function App() {
   return (
@@ -24,7 +27,12 @@ function App() {
         <Process></Process>
         <Pricing></Pricing>
         <Testimonials></Testimonials>
+        <CustomDesign></CustomDesign>
+        <Contact></Contact>
       </main>
+      <footer>
+        <CustomFooter></CustomFooter>
+      </footer>
     </div>
   );
 }
