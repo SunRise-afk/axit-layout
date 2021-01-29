@@ -1,0 +1,44 @@
+@import "../../variables";
+section.stand_pic {
+  background-color: $color_grey_bg_sections;
+  padding: 100px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .sublist_img_container {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .stand_pic_content {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      .stand_pic_heading {
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        &::after {
+          content: "";
+          width: 70px;
+          height: 2px;
+          background-color: $color_orange;
+          display: block;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+      .stand_pic_paragraph {
+        font-size: 14px;
+        color: $color_grey_text;
+        margin: 0;
+      }
+    }
+  }
+}

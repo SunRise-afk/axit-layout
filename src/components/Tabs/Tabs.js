@@ -12,13 +12,22 @@ export const Tabs = () => {
     <section className="tabs">
       <div className="container">
         <div className="tab_buttons">
-          <div className="tab_button" onClick={() => changeActiveTabHandler(1)}>
+          <div
+            className={`tab_button ${activeTab === 1 ? "orange_bg" : ""}`}
+            onClick={() => changeActiveTabHandler(1)}
+          >
             Tab 1
           </div>
-          <div className="tab_button" onClick={() => changeActiveTabHandler(2)}>
+          <div
+            className={`tab_button ${activeTab === 2 ? "orange_bg" : ""}`}
+            onClick={() => changeActiveTabHandler(2)}
+          >
             Tab 2
           </div>
-          <div className="tab_button" onClick={() => changeActiveTabHandler(3)}>
+          <div
+            className={`tab_button ${activeTab === 3 ? "orange_bg" : ""}`}
+            onClick={() => changeActiveTabHandler(3)}
+          >
             Tab 3
           </div>
         </div>

@@ -34,6 +34,9 @@ section.navbar {
             font-family: $ff_opensans;
             font-weight: 600;
             font-size: 14px;
+            &:hover {
+              color: white;
+            }
           }
         }
       }

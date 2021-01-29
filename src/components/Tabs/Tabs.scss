@@ -36,6 +36,9 @@ section.tabs {
         &:hover {
           background-color: $color_orange;
         }
+        &.orange_bg {
+          background-color: $color_orange;
+        }
       }
     }
     .tab_content_container {
