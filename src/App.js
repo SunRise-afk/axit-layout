@@ -4,8 +4,9 @@ import { Socials } from "./components/Socials/Socials";
 import { Tabs } from "./components/Tabs/Tabs";
 import { Sublist } from "./components/Sublist/Sublist";
 import { StandardPicture } from "./components/StandardPicture/StandardPicture";
-import "./App.scss";
 import { Process } from "./components/Process/Process";
+import { Pricing } from "./components/Pricing/Pricing";
+import "./App.scss";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Sublist></Sublist>
         <StandardPicture></StandardPicture>
         <Process></Process>
+        <Pricing></Pricing>
       </main>
     </div>
   );

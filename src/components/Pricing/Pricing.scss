@@ -1,0 +1,108 @@
+@import "../../variables";
+
+section.pricing {
+  padding: 100px 0;
+  background-color: $color_grey_bg_sections;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pricing_heading {
+      font-family: $ff_raleway;
+      font-weight: 400;
+      font-size: 36px;
+      margin: 0;
+      &::after {
+        content: "";
+        width: 70px;
+        height: 2px;
+        background-color: $color_orange;
+        display: block;
+        position: relative;
+        margin: 20px auto;
+      }
+    }
+    .pricing_paragraph {
+      font-size: 14px;
+      color: $color_grey_text;
+      margin: 0;
+    }
+    .pricing_items_row {
+      margin-top: 80px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      .pricing_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 31%;
+        .pricing_item_title {
+          background-color: $color_dark;
+          color: white;
+          font-weight: 700;
+          font-size: 20px;
+          padding: 7px 0;
+          width: 100%;
+          text-align: center;
+          border-bottom: 1px solid white;
+          margin: 0;
+        }
+        .pricing_item_cost_container {
+          background-color: $color_dark;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-bottom: 4px solid $color_orange;
+          .pricing_item_cost {
+            font-size: 94px;
+            color: white;
+            font-family: $ff_raleway;
+            font-weight: 700;
+            margin: 10px 0;
+            span {
+              font-size: 35px;
+              color: white;
+              font-family: $ff_raleway;
+              font-weight: 700;
+              margin: 10px 0;
+            }
+          }
+          .pricing_item_term {
+            font-size: 14px;
+            font-weight: 600;
+            color: $color_grey_text;
+            font-style: italic;
+          }
+          .is_popular_item {
+            color: white;
+            background-color: $color_orange;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 5px 0;
+          }
+        }
+        .pricing_item_conditions {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          background-color: #fff;
+          .pricing_item_condition {
+            padding: 10px 0;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: $color_grey_text;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid $color_grey_bg_sections;
+          }
+        }
+      }
+    }
+  }
+}
