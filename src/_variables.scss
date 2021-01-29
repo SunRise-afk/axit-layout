@@ -1,0 +1,24 @@
+$ff_opensans: "Open-Sans", "serif";
+$ff_raleway: "Raleway", "serif";
+
+$color_orange: #ff9b51;
+$color_grey_text: #86878b;
+$color_grey_links: #cccccc;
+$color_dark: #333333;
+$color_grey_bg_sections: #f5f5f5;
+
+%download_button {
+  width: fit-content;
+  font-family: $ff_opensans;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: 0.25s linear;
+  &:hover {
+    background-color: #fff;
+    color: black;
+  }
+}

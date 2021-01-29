@@ -1,0 +1,38 @@
+@import "../../variables";
+
+section.socials {
+  -webkit-box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.27);
+  padding: 10px 0 30px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .socials_content {
+      width: 35%;
+
+      .socials_heading {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      .socials_paragraph {
+        font-size: 14px;
+        color: $color_grey_text;
+        margin: 0;
+      }
+    }
+    .socials_links {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      i {
+        color: $color_grey_links;
+        font-size: 50px;
+        &:hover {
+          color: $color_dark;
+        }
+      }
+    }
+  }
+}
