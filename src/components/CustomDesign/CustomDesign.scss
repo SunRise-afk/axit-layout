@@ -36,3 +36,11 @@ section.custom {
     }
   }
 }
+@media (max-width: 1200px) {
+  section.custom {
+    .container {
+      width: 90%;
+      text-align: center;
+    }
+  }
+}

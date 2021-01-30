@@ -9,7 +9,7 @@ export const Tabs = () => {
     setActiveTab(tabIndex);
   };
   return (
-    <section className="tabs">
+    <section className="tabs" id="features">
       <div className="container">
         <div className="tab_buttons">
           <div

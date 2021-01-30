@@ -5,7 +5,7 @@ import authorAvatar from "../../assets/images/avatar_2_u231.png";
 
 export const Testimonials = () => {
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="reviews">
       <div className="container">
         <h2 className="testimonials_heading">WHAT OUR CUSTOMERS ARE SAYING</h2>
         <p className="testimonials_paragraph">

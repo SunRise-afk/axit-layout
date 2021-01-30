@@ -1,5 +1,5 @@
-import { Jumbo } from "./components/Jumbo/Jumbo";
 import { Navbar } from "./components/Navbar/Navbar";
+import { Jumbo } from "./components/Jumbo/Jumbo";
 import { Socials } from "./components/Socials/Socials";
 import { Tabs } from "./components/Tabs/Tabs";
 import { Sublist } from "./components/Sublist/Sublist";

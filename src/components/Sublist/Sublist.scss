@@ -74,3 +74,40 @@ section.sublist {
     }
   }
 }
+@media (max-width: 1200px) {
+  section.sublist {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      .sublist_img_container {
+        width: 100%;
+        justify-content: center;
+      }
+      .sublist_content {
+        width: 100%;
+        .sublist_content_description {
+          .sublist_content_heading {
+            text-align: center;
+            &::after {
+              margin: 20px auto;
+            }
+          }
+          .sublsit_content_paragraph {
+            text-align: center;
+          }
+        }
+        .sublist_titles {
+          align-items: center;
+          width: 100%;
+          .sublist_title {
+            flex-direction: column;
+            .sublist_title_description {
+              text-align: center;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

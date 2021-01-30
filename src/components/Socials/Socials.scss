@@ -37,3 +37,55 @@ section.socials {
     }
   }
 }
+@media (max-width: 1200px) {
+  section.socials {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      .socials_content {
+        width: 100%;
+        margin-bottom: 30px;
+        .socials_heading {
+          text-align: center;
+        }
+        .socials_paragraph {
+          text-align: center;
+        }
+      }
+      .socials_links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  section.socials {
+    .container {
+      .socials_links {
+        a {
+          i {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 414px) {
+  section.socials {
+    .container {
+      .socials_links {
+        a {
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}

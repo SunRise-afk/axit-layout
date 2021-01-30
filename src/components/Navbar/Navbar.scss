@@ -3,6 +3,7 @@
 section.navbar {
   background: #000;
   padding: 20px 0;
+  height: fit-content;
   .container {
     display: flex;
     align-items: center;
@@ -18,7 +19,8 @@ section.navbar {
         }
       }
     }
-    .nav {
+    .nav,
+    .nav_burger {
       width: 50%;
       ul {
         display: flex;
@@ -38,6 +40,100 @@ section.navbar {
               color: white;
             }
           }
+        }
+      }
+    }
+  }
+  .container.container_burger {
+    display: none;
+    transition: 1s linear;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .nav_burger {
+      width: 100%;
+      transition: 0.5s linear;
+      overflow: hidden;
+      ul {
+        flex-direction: column;
+        justify-content: space-between;
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  section.navbar {
+    .container {
+      width: 95%;
+    }
+    .nav {
+      display: none;
+    }
+    .container.container_burger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .nav_burger {
+        height: 0;
+        ul {
+          flex-direction: column;
+          justify-content: space-between;
+          li {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .nav_burger.display {
+        height: 220px;
+      }
+    }
+    .burger_button_container {
+      display: flex;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      .burger_button {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        position: relative;
+        transition: 0.1s 0.5s linear;
+        &::before {
+          content: "";
+          width: 25px;
+          height: 3px;
+          background-color: #fff;
+          position: absolute;
+          top: -10px;
+          left: 0;
+          transition: 0.5s linear;
+        }
+        &::after {
+          content: "";
+          width: 25px;
+          height: 3px;
+          background-color: #fff;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          transition: 0.5s linear;
+        }
+      }
+      .burger_button.close {
+        background: #000;
+        transition: 0.1s linear;
+        &::before {
+          top: 50%;
+          transform: rotateZ(45deg);
+        }
+        &::after {
+          top: 50%;
+          transform: rotateZ(135deg);
         }
       }
     }

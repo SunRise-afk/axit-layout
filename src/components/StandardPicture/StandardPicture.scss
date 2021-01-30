@@ -42,3 +42,30 @@ section.stand_pic {
     }
   }
 }
+@media (max-width: 1200px) {
+  section.stand_pic {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      .stand_pic_content {
+        width: 100%;
+        text-align: center;
+        .stand_pic_heading {
+          &::after {
+            margin: 20px auto;
+          }
+        }
+      }
+      .stand_pic_img_container {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

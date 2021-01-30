@@ -63,3 +63,21 @@ section.process {
     }
   }
 }
+@media (max-width: 1200px) {
+  section.process {
+    .container {
+      width: 90%;
+      .process_content_row {
+        width: 100%;
+        text-align: center;
+      }
+      .process_items_row {
+        flex-direction: column;
+        .process_item {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

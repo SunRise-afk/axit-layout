@@ -100,3 +100,45 @@ section.jumbo {
     }
   }
 }
+@media (max-width: 1200px) {
+  section.jumbo {
+    .container {
+      width: 95%;
+      flex-direction: column;
+      align-items: center;
+      .jumbo_content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .content_heading {
+          text-align: center;
+          margin-bottom: 0;
+          &::after {
+            margin: 40px auto;
+          }
+        }
+        .content_paragraph {
+          text-align: center;
+        }
+      }
+      .jumbo_form {
+        justify-content: center;
+        width: 70%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  section.jumbo {
+    .container {
+      .jumbo_form {
+        width: 100%;
+        .form_wrapper {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

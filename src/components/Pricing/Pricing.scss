@@ -106,3 +106,28 @@ section.pricing {
     }
   }
 }
+@media (max-width: 1200px) {
+  section.pricing {
+    .container {
+      width: 90%;
+      .pricing_heading {
+        width: 100%;
+        text-align: center;
+      }
+      .pricing_paragraph {
+        text-align: center;
+        width: 100%;
+      }
+      .pricing_items_row {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        .pricing_item {
+          width: 80%;
+          max-width: 420px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

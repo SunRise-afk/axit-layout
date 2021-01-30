@@ -4,7 +4,7 @@ import { PricingItem } from "./PricingItem";
 
 export const Pricing = () => {
   return (
-    <section className="pricing">
+    <section className="pricing" id="pricing">
       <div className="container">
         <h2 className="pricing_heading">PRICING OPTIONS</h2>
         <p className="pricing_paragraph">

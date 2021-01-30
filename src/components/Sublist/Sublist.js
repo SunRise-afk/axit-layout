@@ -4,7 +4,7 @@ import sublistImg from "../../assets/images/image_left_sub_list_u260.png";
 
 export const Sublist = () => {
   return (
-    <section className="sublist">
+    <section className="sublist" id="about">
       <div className="container">
         <div className="sublist_img_container">
           <img src={sublistImg} alt="" />

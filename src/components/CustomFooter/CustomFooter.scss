@@ -2,7 +2,7 @@
 
 section.footer {
   background-color: black;
-  padding: 40px;
+  padding: 40px 10px;
   .container {
     display: flex;
     justify-content: center;
@@ -15,6 +15,38 @@ section.footer {
         font-size: 50px;
         &:hover {
           color: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  section.footer {
+    .container {
+      width: 100%;
+      .socials_links {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  section.footer {
+    .container {
+      .socials_links {
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 414px) {
+  section.footer {
+    .container {
+      .socials_links {
+        i {
+          font-size: 30px;
         }
       }
     }
